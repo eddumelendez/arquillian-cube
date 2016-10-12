@@ -102,6 +102,7 @@ Then we need to touch +arquillian.xml+ file by setting an special container defi
   <extension qualifier="docker">
     <property name="serverVersion">1.12</property>
     <property name="serverUri">http://localhost:2375</property>
+    <property name="definitionFormat">CUBE</property>
     <property name="dockerContainers"> <!--1-->
       daytime:
         buildImage: <!--2-->
